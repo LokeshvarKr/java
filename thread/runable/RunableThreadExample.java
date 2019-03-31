@@ -10,9 +10,7 @@ class A implements Runnable{
 			catch(Exception e){
 				System.out.println(e.getMessage());
 			}
-
 			System.out.println("A "+i);
-
 		}
 
 

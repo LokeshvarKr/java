@@ -7,7 +7,7 @@ abstract class Person{
 	}
 }
 class Student{
-	private 
+	
 }
 class Faculty{
 
