@@ -6,6 +6,11 @@ class Student{
 		this.rollNumber=rollNumber;
 		this.name=name;
 	}
+
+	@Override
+	public String toString(){
+		return  "Student: [ rollNumber = "+rollNumber+" , name = "+name+" ] ";
+	}
 }
 class A <T1,T2> {
 
@@ -13,6 +18,7 @@ class A <T1,T2> {
 	
 	private T1 data1;
 	private T2 data2;
+	
 	public void setData(T1 data1,T2 data2){
 		this.data1=data1;
 		this.data2=data2;
@@ -36,7 +42,7 @@ public class GenericClassExample{
 		A <Student,Integer> a2=new A<Student,Integer>();
 		Student s1=new Student();
 		s1.setData(121,"lokesh");
-		a2.setData(s1,0);
+		a2.setData(s1,30);
 		a2.printData(); 
 	}
 }
